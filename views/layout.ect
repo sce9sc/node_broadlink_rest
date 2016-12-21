@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <!--script>
+      if (!!window.EventSource) {
+        var source = new EventSource('http://localhost:3000/__webpack_hmr');
+        source.addEventListener('message', function(e) {
+
+          var data = JSON.parse(e.data)
+          if(data.action == "built") {
+            location.reload();
+          }
+        }, false);
+      }
+    </script-->
+  </head>
+  <body>
+    <% content %>
+
+    <script src="/broadlink/bundle.js"> </script>
+  </body>
+</html>
